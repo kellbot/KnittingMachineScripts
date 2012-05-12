@@ -76,7 +76,7 @@ def draw_comb(drawing, pattern, gauge=5, width=30, y=0, tine=True):
 
 
 repeat = [
-        ([32], True),
+        ([24], True),
         ([1,1], True),
         ([2,1], True),
         ([2,2], True)
@@ -85,7 +85,7 @@ repeat = [
 current_y = 0
 
 gauge = 5
-width = 32
+width = 24
 
 
 for line in repeat:
@@ -93,4 +93,4 @@ for line in repeat:
     current_y += 10
 
 
-comb.saveas('combs/standard_5mm.dxf')
+comb.saveas('combs/standard_' + str(gauge) +'mm.dxf')
